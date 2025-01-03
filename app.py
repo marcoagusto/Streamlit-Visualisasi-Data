@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import gdown
+
+# Unduh dataset dari Google Drive
+file_id = '1ScbfBeekkbqOdJupECBv3MtFnffKFXgJ'  # ID file dari URL Google Drive
+gdown.download(f'https://drive.google.com/uc?id={file_id}', 'Electric_Vehicle_Population_Data.csv', quiet=False)
 
 # Load dataset
 data_path = "Electric_Vehicle_Population_Data.csv"
