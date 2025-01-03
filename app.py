@@ -28,19 +28,19 @@ st.sidebar.title("Navigasi Dashboard")
 visualization_choice = st.sidebar.radio(
     "Pilih Tampilan:",
     options=[
-        "Raw Data",
+        "Lihat Raw Data",
         "Distribusi Tahun Model Kendaraan",
         "Rata-rata Jarak Tempuh Berdasarkan Jenis Kendaraan",
         "Hubungan antara Harga Dasar dan Jarak Tempuh"
     ]
 )
 
-# Opsi 1: Tampilkan data mentah
-if visualization_choice == "Lihat Raw Data":
-    st.header("Raw Data")
+# Opsi 1: Tampilkan raw data
+if visualization_choice == "Lihat Data Raw":
+    st.header("Data Raw")
     st.markdown(
         """
-        Berikut adalah raw Data dari populasi kendaraan listrik. Anda dapat 
+        Berikut adalah data raw dari populasi kendaraan listrik. Anda dapat 
         menjelajahi setiap kolom dalam dataset untuk mendapatkan pemahaman yang lebih dalam.
         """
     )
