@@ -28,7 +28,7 @@ st.sidebar.title("Navigasi Dashboard")
 visualization_choice = st.sidebar.radio(
     "Pilih Tampilan:",
     options=[
-        "Lihat Raw Data",
+        "Lihat Data Raw", 
         "Distribusi Tahun Model Kendaraan",
         "Rata-rata Jarak Tempuh Berdasarkan Jenis Kendaraan",
         "Hubungan antara Harga Dasar dan Jarak Tempuh"
@@ -36,7 +36,7 @@ visualization_choice = st.sidebar.radio(
 )
 
 # Opsi 1: Tampilkan raw data
-if visualization_choice == "Lihat Data Raw":
+if visualization_choice == "Lihat Data Raw": 
     st.header("Data Raw")
     st.markdown(
         """
