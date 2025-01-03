@@ -28,7 +28,7 @@ st.sidebar.title("Navigasi Dashboard")
 visualization_choice = st.sidebar.radio(
     "Pilih Tampilan:",
     options=[
-        "Lihat Raw Data",
+        "Raw Data",
         "Distribusi Tahun Model Kendaraan",
         "Rata-rata Jarak Tempuh Berdasarkan Jenis Kendaraan",
         "Hubungan antara Harga Dasar dan Jarak Tempuh"
