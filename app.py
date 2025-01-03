@@ -24,18 +24,30 @@ st.markdown(
 # Sidebar Header
 st.sidebar.title("Navigasi Dashboard")
 
-# Sidebar untuk memilih visualisasi
+# Sidebar untuk memilih tampilan
 visualization_choice = st.sidebar.radio(
-    "Pilih Visualisasi:",
+    "Pilih Tampilan:",
     options=[
+        "Lihat Data Mentah",
         "Distribusi Tahun Model Kendaraan",
         "Rata-rata Jarak Tempuh Berdasarkan Jenis Kendaraan",
         "Hubungan antara Harga Dasar dan Jarak Tempuh"
     ]
 )
 
+# Opsi 1: Tampilkan data mentah
+if visualization_choice == "Lihat Data Mentah":
+    st.header("Data Mentah")
+    st.markdown(
+        """
+        Berikut adalah data mentah dari populasi kendaraan listrik. Anda dapat 
+        menjelajahi setiap kolom dalam dataset untuk mendapatkan pemahaman yang lebih dalam.
+        """
+    )
+    st.dataframe(data)
+
 # Visualisasi 1: Distribusi Tahun Model
-if visualization_choice == "Distribusi Tahun Model Kendaraan":
+elif visualization_choice == "Distribusi Tahun Model Kendaraan":
     st.header("Distribusi Tahun Model Kendaraan Listrik")
     st.markdown(
         """
